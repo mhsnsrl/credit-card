@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #d4eafd;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.w- {
+  &100 {
+    width: 100% !important;
+  }
+  &75 {
+    width: 75% !important;
+  }
+  &50 {
+    width: 50% !important;
+  }
+  &30 {
+    width: 30% !important;
+  }
+  &25 {
+    width: 25% !important;
+  }
+}
+.h- {
+  &1 {
+    height: 1rem !important;
+  }
+  &2 {
+    height: 2rem !important;
+  }
+  &3 {
+    height: 3rem !important;
+  }
+  &4 {
+    height: 4rem !important;
+  }
+  &5 {
+    height: 5rem !important;
+  }
+}
+.mb- {
+  &1 {
+    margin-bottom: 1rem;
+  }
+  &2 {
+    margin-bottom: 2rem;
+  }
+  &3 {
+    margin-bottom: 3rem;
+  }
+}
+.d- {
+  &b {
+    display: block !important;
+  }
+  &i-b {
+    display: inline-block !important;
+  }
+}
+

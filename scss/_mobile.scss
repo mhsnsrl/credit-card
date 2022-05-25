@@ -1,0 +1,29 @@
+@media (max-width:1000px){
+    html{
+        font-size: 8px;
+        
+    }
+    
+}
+@media (max-width:700px){
+    html{
+        font-size: 7px;
+        
+    }
+    #invisible {
+        transform: translateY(7px) !important;
+      
+      }
+   
+}
+@media (max-width:500px){
+    html{
+        font-size: 6px;
+        
+    }
+    #invisible {
+        transform: translateY(5px) !important;
+      
+      }
+    
+}

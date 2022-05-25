@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Credit-Card</title>
+  </head>
+  <body >
+    <div id="card" class="creditCard">
+        <div id="border"></div>
+      <img id="chip" class="chip" src="img/chip.png" />
+      <img id="visa" class="visa" src="img/visa.png" />
+      <div id="visible" class="cardNumber">
+        <span class="cardNumber1"><span>#</span></span>
+        <span class="cardNumber2"><span>#</span></span>
+        <span class="cardNumber3"><span>#</span></span>
+        <span class="cardNumber4"><span>#</span></span>
+        <span class="cardNumber5"><span>#</span></span>
+        <span class="cardNumber6"><span>#</span></span>
+        <span class="cardNumber7"><span>#</span></span>
+        <span class="cardNumber8"><span>#</span></span>
+        <span class="cardNumber9"><span>#</span></span>
+        <span class="cardNumber10"><span>#</span></span>
+        <span class="cardNumber11"><span>#</span></span>
+        <span class="cardNumber12"><span>#</span></span>
+        <span class="cardNumber13"><span>#</span></span>
+        <span class="cardNumber14"><span>#</span></span>
+        <span class="cardNumber15"><span>#</span></span>
+        <span class="cardNumber16"><span>#</span></span>
+      </div>
+      <div id="invisible" class="cardNumber">
+        <span class="cardNumber1">#</span>
+        <span class="cardNumber2">#</span>
+        <span class="cardNumber3">#</span>
+        <span class="cardNumber4">#</span>
+        <span class="cardNumber5">#</span>
+        <span class="cardNumber6">#</span>
+        <span class="cardNumber7">#</span>
+        <span class="cardNumber8">#</span>
+        <span class="cardNumber9">#</span>
+        <span class="cardNumber10">#</span>
+        <span class="cardNumber11">#</span>
+        <span class="cardNumber12">#</span>
+        <span class="cardNumber13">#</span>
+        <span class="cardNumber14">#</span>
+        <span class="cardNumber15">#</span>
+        <span class="cardNumber16">#</span>
+      </div>
+      <div id="title" class="cardHolder">
+        <span class="title">Card Holder</span>
+        <span id="fullName" class="fullName">AD SOYAD</span>
+      </div>
+      <div id="empires" class="empires">
+        <span  class="title">Empires</span>
+        <span id="date_month" class="date">MM</span><span class="date">/</span><span  id="date_year" class="date">YY</span>
+      </div>
+
+      
+    </div>
+    <form id="form" class="form">
+        <label class="title">Card Number</label>
+        
+        <input
+          id="cardNumberInput"
+          class="w-100 h-4 mb-2"
+          type="text"
+          onclick="borderNumber()"
+          onkeydown="validate(event)  "
+        />
+        <label class="title">Card Name</label>
+        <input id="cardNameInput" class=" w-100 h-4 mb-2" type="text" onclick="borderName()" onkeydown="letter(event)  "/>
+
+        <div class="titles">
+          <span class="title" >Expiration Date</span>
+          <span class="title">Cvv</span>
+        </div>
+        <div class="inputs">
+          <select id="month" class="month w-30 h-4 mb-2" onclick="borderMonth()" onchange="getMonth(event)">
+            <option>Month</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <select id="year" class="year w-30 h-4 mb-2" onclick="borderMonth()" onchange="getYear(event)">
+            <option>Year</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            <option>2031</option>
+            <option>2032</option>
+            <option>2033</option>
+          </select>
+          <input class="cvv w-30 h-4 mb-2 ml-auto" type="text" onclick="rotate()" onkeydown="cvv(event)" />
+        </div>
+        <button type="submit" class="w-100 h-5">Submit</button>
+      </form>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

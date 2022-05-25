@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  background-color: #d4eafd;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.w-100 {
+  width: 100% !important; }
+
+.w-75 {
+  width: 75% !important; }
+
+.w-50 {
+  width: 50% !important; }
+
+.w-30 {
+  width: 30% !important; }
+
+.w-25 {
+  width: 25% !important; }
+
+.h-1 {
+  height: 1rem !important; }
+
+.h-2 {
+  height: 2rem !important; }
+
+.h-3 {
+  height: 3rem !important; }
+
+.h-4 {
+  height: 4rem !important; }
+
+.h-5 {
+  height: 5rem !important; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.d-b {
+  display: block !important; }
+
+.d-i-b {
+  display: inline-block !important; }
+
+.creditCard {
+  position: relative;
+  width: 35rem;
+  height: 22rem;
+  border-radius: 2rem;
+  background: url("../img/card.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 2rem auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transition: all 1s ease; }
+  .creditCard .chip {
+    width: 16%;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    transition: all 1s ease; }
+  .creditCard .visa {
+    width: 20%;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: all 1s ease; }
+  .creditCard .cardNumber {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 17%;
+    background: black;
+    border: none;
+    position: absolute;
+    bottom: 8rem;
+    left: 2rem;
+    background: transparent;
+    transition: all 1s ease; }
+    .creditCard .cardNumber span {
+      font-size: 2rem;
+      letter-spacing: .24rem;
+      font-weight: 900;
+      color: white; }
+      .creditCard .cardNumber span.cardNumber4 {
+        margin-right: 2rem; }
+      .creditCard .cardNumber span.cardNumber8 {
+        margin-right: 2rem; }
+      .creditCard .cardNumber span.cardNumber12 {
+        margin-right: 2rem; }
+  .creditCard .cardHolder {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.2rem; }
+  .creditCard .fullName {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: .1rem; }
+
+.empires {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.2rem; }
+  .empires .title {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: #b3b3b3;
+    transition: all 1s ease; }
+  .empires .date {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px; }
+
+#invisible {
+  transform: translateY(10px) !important; }
+  #invisible span {
+    opacity: 0; }
+
+.form {
+  position: absolute;
+  top: 35rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 45rem;
+  margin: 2rem auto;
+  padding: 15rem 3rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  z-index: -1;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
+  .form .title {
+    display: inline-block;
+    color: #00103b;
+    letter-spacing: 0.1px; }
+  .form input,
+  .form .month,
+  .form .year {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, #d1d5db 0px 0px 0px 1px inset;
+    padding: 1rem;
+    font-size: 1.5rem; }
+    .form input:focus,
+    .form .month:focus,
+    .form .year:focus {
+      outline: none;
+      box-shadow: rgba(29, 41, 211, 0.24) 0px 0px 0px 1px, #6f98d6 0px 0px 0px 1px inset; }
+  .form .inputs {
+    display: flex;
+    justify-content: space-between; }
+  .form .titles {
+    display: flex;
+    justify-content: space-between; }
+    .form .titles span:last-child {
+      margin-right: 11rem; }
+  .form button {
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #2155cd; }
+    .form button:hover {
+      background-color: #4171e0; }
+
+.title {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: .1rem;
+  color: #b3b3b3; }
+
+span {
+  transition: all 0.4s ease; }
+
+#border {
+  border: 2px solid gray;
+  border-radius: 5px;
+  background: transparent;
+  width: 90%;
+  height: 5rem;
+  position: absolute;
+  bottom: 7.5rem;
+  left: 1.3rem;
+  transition: all 0.5s ease; }
+
+#cardBackgroundBlack {
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 2rem;
+  transition: all 1s ease; }
+
+#cardBackgroundCvv {
+  width: 94%;
+  height: 4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 10rem;
+  border-radius: 5px;
+  margin-left: 3%;
+  transition: all 1s ease;
+  color: black;
+  transform: rotate3d(0, 1, 0, 360); }
+
+#backCvvTitle {
+  transition: all 1s ease;
+  position: absolute;
+  font-size: small;
+  top: 8rem;
+  left: 1.4rem;
+  color: #fff;
+  transform: rotate3d(0, 1, 0, 180deg); }
+
+#backCvv {
+  transition: all 1s ease;
+  position: absolute;
+  font-size: small;
+  top: 11.4rem;
+  left: 1.4rem;
+  color: black;
+  transform: rotate3d(0, 1, 0, 180deg);
+  z-index: 3; }
+
+select option {
+  color: green;
+  border: 1px solid black; }
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px; } }
+
+@media (max-width: 700px) {
+  html {
+    font-size: 7px; }
+  #invisible {
+    transform: translateY(7px) !important; } }
+
+@media (max-width: 500px) {
+  html {
+    font-size: 6px; }
+  #invisible {
+    transform: translateY(5px) !important; } }

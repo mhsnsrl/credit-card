@@ -1,0 +1,218 @@
+.creditCard {
+  position: relative;
+  width: 35rem;
+  height: 22rem;
+  border-radius: 2rem;
+  background: url("../img/card.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 2rem auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transition: all 1s ease;
+
+  .chip {
+    width: 16%;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    transition: all 1s ease;
+  }
+  .visa {
+    width: 20%;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: all 1s ease;
+  }
+  .cardNumber {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 17%;
+    background: black;
+    border: none;
+    position: absolute;
+    bottom: 8rem;
+    left: 2rem;
+    background: transparent;
+    transition: all 1s ease;
+
+    span {
+      font-size: 2rem;
+      letter-spacing: .24rem;
+      font-weight: 900;
+      color: white;
+      &.cardNumber4 {
+        margin-right: 2rem;
+      }
+      &.cardNumber8 {
+        margin-right: 2rem;
+      }
+      &.cardNumber12 {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .cardHolder {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.2rem;
+  }
+  .fullName {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+  }
+}
+.empires {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.2rem;
+  .title {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: lighten(grey, 20%);
+    transition: all 1s ease;
+  }
+  .date {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+#invisible {
+  transform: translateY(10px) !important;
+
+  span {
+    opacity: 0;
+  }
+}
+.form {
+  position: absolute;
+  top: 35rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 45rem;
+  margin: 2rem auto;
+  padding: 15rem 3rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  z-index: -1;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  .title {
+    display: inline-block;
+    color: darken($darkBlue, 10%);
+    letter-spacing: 0.1px;
+  }
+  input,
+  .month,
+  .year {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+      rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 1rem;
+    font-size: 1.5rem;
+    &:focus {
+      outline: none;
+      box-shadow: rgba(29, 41, 211, 0.24) 0px 0px 0px 1px,
+        rgb(111, 152, 214) 0px 0px 0px 1px inset;
+    }
+  }
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    span:last-child {
+      margin-right: 11rem;
+    }
+  }
+  button {
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #2155cd;
+    &:hover {
+      background-color: lighten(#2155cd, 10%);
+    }
+  }
+}
+
+.title {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: .1rem;
+  color: lighten(grey, 20%);
+}
+span {
+  transition: all 0.4s ease;
+}
+#border {
+  border: 2px solid gray;
+  border-radius: 5px;
+  background: transparent;
+  width: 90%;
+  height: 5rem;
+  position: absolute;
+  bottom: 7.5rem;
+  left: 1.3rem;
+  transition: all 0.5s ease;
+}
+#cardBackgroundBlack {
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 2rem;
+  transition: all 1s ease;
+}
+#cardBackgroundCvv {
+  width: 94%;
+  height: 4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 10rem;
+  border-radius: 5px;
+  margin-left: 3%;
+  transition: all 1s ease;
+  color: black;
+  transform: rotate3d(0, 1, 0, 360);
+}
+#backCvvTitle{
+  transition: all 1s ease;
+    position: absolute;
+    font-size:small;
+
+    top: 8rem;
+    left: 1.4rem;
+    color: #fff;
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+#backCvv{
+    transition: all 1s ease;
+      position: absolute;
+      font-size: small;
+      top: 11.4rem;
+      left: 1.4rem;
+      color: black;
+      transform: rotate3d(0, 1, 0, 180deg);
+      z-index: 3;
+  }
+select{
+    option{
+        color: green;
+        border: 1px solid black;
+        
+    }
+}
